@@ -9,6 +9,11 @@ router.get("/", (req, res) => {
     hello: "hi!"
   });
 });
+router.get("/api", (req, res) => {
+  res.json({
+    hello: "hi!jhsdvkbskdj"
+  });
+});
 
 app.use(`/.netlify/functions/api`, router);
 
